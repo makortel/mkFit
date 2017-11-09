@@ -64,6 +64,9 @@ namespace Config
   bool  inclusiveShorts = false;
   bool  applyCMSSWHitMatch = false;
 
+  bool  kludgeCmsHitErrors = false;
+  bool  backwardFit = false;
+
   void RecalculateDependentConstants()
   {
     maxCandsPerEtaBin = std::max(100, maxCandsPerSeed * (nTracks+100) / nEtaPart);
